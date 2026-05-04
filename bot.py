@@ -34,7 +34,7 @@ def keep_alive():
     t.start()
 
 # ----------- ২. কনফিগারেশন -----------
-BOT_TOKEN = "8638614270:AAHXrpYgymcHV-PSuODjuJf9a8DgTByPUjs"
+BOT_TOKEN = "8673693249:AAE_Y8S-jHT9S5IYjN_nX4U8o-c2nZNRpbc"
 
 # সেশন মেইনটেইন করার জন্য
 session = requests.Session()
