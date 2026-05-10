@@ -74,7 +74,7 @@ async def process_student_results(update_or_query, data_list):
         final_output += (
             f"📄 Result {i}\n"
             f"<pre>"
-            f"Transaction Id: {data['id']}\n"
+            f"🆔 Transaction Id: {data['id']}\n"
             f"Student Name: {data['name']}\n"
             f"Roll: {data['roll']}\n"
             f"Board: {data['board']}\n"
