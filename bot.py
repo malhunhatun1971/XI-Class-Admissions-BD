@@ -68,21 +68,21 @@ def get_data(tid):
 
 async def process_student_results(update_or_query, data_list):
     msg_source = update_or_query.message if hasattr(update_or_query, 'message') else update_or_query
-    final_output = "📄 <b>XI Admission Fee Result</b>\n\n"
+    final_output = "🏛️ <b>XI Admission Fee Result</b>\n\n"
     phones = []
     for i, data in enumerate(data_list, 1):
         final_output += (
-            f"📄 Result {i}\n"
+            f"🎯 Result {i}\n"
             f"<pre>"
             f"🆔 Transaction Id: {data['id']}\n"
-            f"Student Name: {data['name']}\n"
-            f"Roll: {data['roll']}\n"
-            f"Board: {data['board']}\n"
-            f"Year: {data['year']}\n"
-            f"Contact No: {data['contact']}\n"
-            f"Fee Type: {data['fee_type']}\n"
-            f"Fee Amount: {data['amount']}\n"
-            f"Date: {data['date']}"
+            f"👤 Student Name: {data['name']}\n"
+            f"🔢 Roll: {data['roll']}\n"
+            f"🏫 Board: {data['board']}\n"
+            f"📆 Year: {data['year']}\n"
+            f"📳 Contact No: {data['contact']}\n"
+            f"📝 Fee Type: {data['fee_type']}\n"
+            f"💰 Fee Amount: {data['amount']}\n"
+            f"​​📅 Date: {data['date']}"
             f"</pre>\n\n"
         )
         p = data["contact"].strip()[-11:]
